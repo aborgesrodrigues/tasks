@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<installs>
+<install is-default="false">
+<home>/home/alessandro/IDEs/ggts-bundle/grails-2.4.4/</home>
+<name>Grails 2.4.4</name>
+</install>
+<install is-default="true">
+<home>/home/alessandro/frameworks/grails-2.4.5/</home>
+<name>Grails 2.4.5</name>
+</install>
+</installs>
