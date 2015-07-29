@@ -9,5 +9,8 @@ class UrlMappings {
 
         "/"(view:"/index")
         "500"(view:'/error')
+
+ 		"/task/list" (controller: "task", action: "list")
+ 		"/task/get/$id?" (controller: "task", action: "get")
 	}
 }
