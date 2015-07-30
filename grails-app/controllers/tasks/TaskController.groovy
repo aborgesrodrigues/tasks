@@ -100,7 +100,7 @@ class TaskController {
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }/*
+        }*/
     }
 
     protected void notFound() {
