@@ -22,7 +22,7 @@ storageEngine = function() {
 			if(!obj.id)
 			{
 				tipo="POST";
-				url = "/task/save";
+				url = "https://mproftasks.herokuapp.com/task/save";
 				contentType = false;
 				dataType = false;
 				$form.find("#id").val("");
@@ -41,7 +41,7 @@ storageEngine = function() {
 			else
 			{
 				tipo="PUT";
-				url = "/task/update";
+				url = "https://mproftasks.herokuapp.com/task/update";
 				//data = JSON.stringify($('form').serializeArray());
 				contentType: "application/json; charset=utf-8"
 				dataType: "json"
@@ -77,7 +77,7 @@ storageEngine = function() {
 		},
 		findAll : function(type, successCallback, errorCallback) {
 			$.ajax({
-			    url: "/task/list",
+			    url: "https://mproftasks.herokuapp.com/task/list",
 			    dataType: "json",
 			    type: "GET",
 				processData: false,  // tell jQuery not to process the data
@@ -108,7 +108,7 @@ storageEngine = function() {
 		},
 		delete : function(type, id, successCallback, errorCallback) {
 			$.ajax({
-			    url: "/task/delete",
+			    url: "https://mproftasks.herokuapp.com/task/delete",
 			    type: "DELETE",
 			    data: JSON.stringify({id: id}),
 				processData: false,  // tell jQuery not to process the data
@@ -124,7 +124,7 @@ storageEngine = function() {
 		},
 		findById : function (type, id, successCallback, errorCallback) {
 			$.ajax({
-			    url: "/task/get/"+id,
+			    url: "https://mproftasks.herokuapp.com/task/get/"+id,
 			    dataType: "json",
 			    type: "GET",
 				processData: false,  // tell jQuery not to process the data
