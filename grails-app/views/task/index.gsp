@@ -72,7 +72,7 @@ media="screen" />
 	</main>
 	<footer id="footer"></footer>
 	<div style="display:none;overflow-x: hidden;" id="divModal">
-		<iframe src="/tasks/category" style="width:100%;height:100%" scrolling="no"></iframe>
+		<iframe src="/category" style="width:100%;height:100%" scrolling="no"></iframe>
 	</div>
 </body>
 <script>
