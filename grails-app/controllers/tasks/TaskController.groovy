@@ -45,6 +45,8 @@ class TaskController {
         }
 
         taskInstance.save flush:true
+        
+        render text: [task:taskInstance] as JSON, contentType: 'application/json'
 
         /*request.withFormat {
             form multipartForm {
@@ -73,6 +75,8 @@ class TaskController {
             respond taskInstance.errors, view:'edit'
             return
         }
+        
+        render text: [task:taskInstance] as JSON, contentType: 'application/json'
 
         /*request.withFormat {
             form multipartForm {
@@ -93,6 +97,8 @@ class TaskController {
         }
 
         taskInstance.delete flush:true
+        
+        render text: [task:taskInstance] as JSON, contentType: 'application/json'
 
         /*request.withFormat {
             form multipartForm {
