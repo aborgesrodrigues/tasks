@@ -3,7 +3,8 @@
 		toObject: function() {
 		  var result = {}
 		  $.each(this.serializeArray(), function(i, v) {
-			result[v.id] = v.value;
+		  	var $campo = $("[name='" + v.name + "']")
+			result[$campo.attr("id")] = v.value;
 		  });
 		  return result;
 		  },
