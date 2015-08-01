@@ -15,7 +15,7 @@ storageEngine = function() {
 			var data;
 			var contentType;
 			var dataType;
-			var $form = $("form").clone(true);
+			var $form = $("form");
 			//console.log($("form"));
 			//console.log($form);
 
@@ -69,9 +69,11 @@ storageEngine = function() {
          		dataType: dataType,
 			    success: function(result) {
 			        successCallback(obj);
+			        $("#requiredBy").attr("type", "date");
 			    },
 			    error: function(request, status, error) {
-			        alert(error)
+			        alert(error);
+			        $("#requiredBy").attr("type", "date");
 			    },
 			});
 		},
