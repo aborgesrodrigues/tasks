@@ -15,7 +15,7 @@ storageEngine = function() {
 			var data;
 			var contentType;
 			var dataType;
-			var $form = $("form");
+			var $form = $("form").clone(true);
 			//console.log($("form"));
 			//console.log($form);
 
